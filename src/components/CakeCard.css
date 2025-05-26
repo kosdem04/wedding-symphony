@@ -1,0 +1,77 @@
+
+.product__card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.product__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(216, 140, 162, 0.2);
+}
+
+.card-labels {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.card-label {
+    background-color: #d88ca2;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.card-label-secondary {
+    background-color: #b66b84;
+}
+
+.content .title {
+    font-size: 1.2rem;
+    color: #b66b84;
+    margin-bottom: 8px;
+}
+
+.content .amount {
+    font-size: 0.95rem;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.content .count {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #d88ca2;
+    margin-bottom: 15px;
+}
+
+.card__btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #d88ca2;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card__btn:hover {
+    background-color: #b66b84;
+}
+
+
+.swiper {
+   margin-bottom: 10px;
+}

@@ -6,9 +6,51 @@ import telegramIcon from './assets/telegram.svg'
 import whatsappIcon from './assets/whatsapp.svg'
 import chef from './assets/chef.jpg' // Фото кондитера
 import './App.css'
+import CakeCard from "./components/CakeCard.jsx";
 
 function App() {
-    const [count, setCount] = useState(0)
+    const [expanded, setExpanded] = useState([]);
+
+    const toggle = (index) => {
+        setExpanded((prev) => {
+            const newExpanded = [...prev];
+            newExpanded[index] = !newExpanded[index];
+            return newExpanded;
+        });
+    };
+
+    const cakes = [
+        {
+            label: "Новинка",
+            image: cake2,
+            title: "Белоснежная классика",
+            size: "90 см | 20-40 гостей",
+            price: "15 000 ₽",
+            desc: "Белоснежная классика высотой 90 см на 20 – 40 гостей, который " +
+                "станет не только украшением вашего праздника, но и гастрономическим " +
+                "наслаждением для вас и ваших гостей.",
+        },
+        {
+            label: "Нежность",
+            image: cake3,
+            title: "Торжество нежности",
+            size: "80 см | 20-40 гостей",
+            price: "13 500 ₽",
+            desc: "Белый цвет и классические линии — это символ элегантности и утонченности. " +
+                "Наш торт на 20 - 40 гостей высотой 80 см станет великолепным дополнением к " +
+                "любому свадебному стилю, от традиционного до современного.",
+        },
+        {
+            label: "Хит",
+            image: cake1,
+            title: "Симфония любви",
+            size: "60 см | 15-20 гостей",
+            price: "12 000 ₽",
+            desc: "Шикарный трёхъярусный торт для 15 – 20 гостей высотой 60 см классического " +
+                "дизайна — идеальное решение, которое станет не только сладким акцентом " +
+                "вашего праздника, но и великолепным фоном для ваших свадебных фотографий.",
+        },
+    ];
 
     return (
         <>
@@ -19,12 +61,12 @@ function App() {
                     <div style={{display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '20px'}}>
                       <span className="header__round">
                         <a href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">
-                          <img  src={telegramIcon} alt="Telegram" style={{width: '64px', height: '64px'}}/>
+                          <img src={telegramIcon} alt="Telegram" style={{width: '64px', height: '64px'}}/>
                         </a>
                         </span>
                         <span className="header__round">
                         <a href="https://wa.me/79001234567" target="_blank" rel="noopener noreferrer">
-                          <img  src={whatsappIcon} alt="WhatsApp" style={{width: '64px', height: '64px'}}/>
+                          <img src={whatsappIcon} alt="WhatsApp" style={{width: '64px', height: '64px'}}/>
                         </a>
                       </span>
                     </div>
@@ -66,27 +108,12 @@ function App() {
                 <div className="container">
                     <h2>Выбери свой торт</h2>
                     <div className="gallery-grid">
-                        <div className="product-card">
-                            <img src={cake2} alt="Свадебный торт 2"/>
-                            <h3>Белоснежная классика</h3>
-                            <p className="price">12 000 ₽</p>
-                            <p className="desc">Высокий торт с классическим оформлением, идеально подходит для
-                                элегантной свадьбы.</p>
-                        </div>
-                        <div className="product-card">
-                            <img src={cake3} alt="Свадебный торт 3"/>
-                            <h3>Розовое вдохновение</h3>
-                            <p className="price">14 500 ₽</p>
-                            <p className="desc">Нежные оттенки роз и изысканный декор придадут вашему празднику
-                                романтичности.</p>
-                        </div>
-                        <div className="product-card">
-                            <img src={cake1} alt="Свадебный торт 1"/>
-                            <h3>Симфония любви</h3>
-                            <p className="price">13 200 ₽</p>
-                            <p className="desc">Шикарный трёхъярусный торт с акцентами из живых цветов — эффектно и
-                                стильно.</p>
-                        </div>
+                        {cakes.map((cake, index) => (
+                            <CakeCard
+                                key={index}
+                                {...cake}
+                            />
+                        ))}
                     </div>
                 </div>
             </section>

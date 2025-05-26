@@ -246,7 +246,7 @@
   /* Для адаптива — на узких экранах можно сделать колонку */
   @media (max-width: 767px) {
     .feature-list {
-      flex-wrap: wrap;
+      grid-template-columns: 1fr;
     }
 
     .feature {
@@ -304,7 +304,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--accent-color, #d88ca2);
+    background-color: #d88ca2;
     border-radius: 8px;
     padding: 5px;
     transition: 0.4s ease all;
@@ -312,5 +312,9 @@
   }
 
   .header__round:hover {
-    background-color: var(--secondary-color, #b66b84);
+    background-color: #b66b84;
   }
+
+
+
+
