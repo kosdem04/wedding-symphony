@@ -1,210 +1,249 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff9f9;
-  color: #333;
-  line-height: 1.6;
-}
-
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 0;
-}
-
-.hero {
-  background: linear-gradient(to bottom right, #ffeef1, #fff);
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.hero-content h1 {
-  font-size: 2.8rem;
-  color: #d88ca2;
-  margin-bottom: 10px;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.btn {
-  background-color: #d88ca2;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background-color: #b66b84;
-}
-
-.about h2,
-.gallery h2,
-.contact h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: #b66b84;
-  margin-bottom: 20px;
-}
-
-.about p {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.gallery-grid img {
-  width: 100%;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  font-size: 1rem;
-}
-
-footer {
-  background-color: #fbe7eb;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.features {
-  background-color: #fff4f6;
-  padding: 60px 0;
-}
-
-.features h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: #b66b84;
-  margin-bottom: 40px;
-}
-
-.feature-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-.feature {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  text-align: center;
-}
-
-.feature h3 {
-  color: #d88ca2;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-}
-
-.feature p {
-  font-size: 1rem;
-  color: #555;
-}
-
-
-.about-chef {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-
-.about-chef img {
-  max-width: 280px;
-  border-radius: 50%;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-}
-
-@media (min-width: 768px) {
-  .about-chef {
-    flex-direction: row;
-    justify-content: space-between;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-  .about-text {
-    flex: 1;
-    padding-right: 30px;
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff9f9;
+    color: #333;
+    line-height: 1.6;
   }
 
-  .about-photo {
-    flex: 0 0 auto;
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0;
   }
-}
 
-.feature-list {
-  display: flex;
-  gap: 20px;
-  flex-wrap: nowrap;
-  overflow-x: auto; /* чтобы при нехватке места можно было скроллить */
-  padding-bottom: 10px;
-}
+  .hero {
+    background: linear-gradient(to bottom right, #ffeef1, #fff);
+    padding: 100px 20px;
+    text-align: center;
+  }
 
-.feature {
-  flex: 1 0 220px; /* фиксированная минимальная ширина, чтобы все были видны в ряд */
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+  .hero-content h1 {
+    font-size: 2.8rem;
+    color: #d88ca2;
+    margin-bottom: 10px;
+  }
 
-/* Опционально, чтобы заголовки были чуть выше */
-.feature h3 {
-  margin-bottom: 10px;
-}
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
 
-/* Для адаптива — на узких экранах можно сделать колонку */
-@media (max-width: 767px) {
+  .btn {
+    background-color: #d88ca2;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #b66b84;
+  }
+
+  .about h2,
+  .gallery h2,
+  .contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #b66b84;
+    margin-bottom: 20px;
+  }
+
+  .about p {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+
+  .product-card h3 {
+    font-size: 1.2rem;
+    color: #b66b84;
+    margin-bottom: 10px;
+  }
+
+  .product-card .price {
+    font-weight: bold;
+    color: #d88ca2;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+
+  .product-card .desc {
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  footer {
+    background-color: #fbe7eb;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  .features {
+    background-color: #fff4f6;
+    padding: 60px 0;
+  }
+
+  .features h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #b66b84;
+    margin-bottom: 40px;
+  }
+
   .feature-list {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
   }
 
   .feature {
-    flex: 1 0 100%;
-    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
   }
-}
+
+  .feature h3 {
+    color: #d88ca2;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  .feature p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+
+  .about-chef {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+
+  .about-chef img {
+    max-width: 280px;
+    border-radius: 50%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: 768px) {
+    .about-chef {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .about-text {
+      flex: 1;
+      padding-right: 30px;
+    }
+
+    .about-photo {
+      flex: 0 0 auto;
+    }
+  }
+
+  .feature-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* чтобы при нехватке места можно было скроллить */
+    padding-bottom: 10px;
+  }
+
+  .feature {
+    flex: 1 0 220px; /* фиксированная минимальная ширина, чтобы все были видны в ряд */
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Опционально, чтобы заголовки были чуть выше */
+  .feature h3 {
+    margin-bottom: 10px;
+  }
+
+  /* Для адаптива — на узких экранах можно сделать колонку */
+  @media (max-width: 767px) {
+    .feature-list {
+      flex-wrap: wrap;
+    }
+
+    .feature {
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+  }
