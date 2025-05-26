@@ -157,17 +157,18 @@
 
   .feature-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* 2 элемента в строку */
     gap: 30px;
+    padding-bottom: 10px;
   }
 
-  .feature {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    text-align: center;
-  }
+  /*.feature {*/
+  /*  background-color: #ffffff;*/
+  /*  border-radius: 12px;*/
+  /*  padding: 25px;*/
+  /*  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);*/
+  /*  text-align: center;*/
+  /*}*/
 
   .feature h3 {
     color: #d88ca2;
@@ -211,13 +212,13 @@
     }
   }
 
-  .feature-list {
-    display: flex;
-    gap: 20px;
-    flex-wrap: nowrap;
-    overflow-x: auto; /* чтобы при нехватке места можно было скроллить */
-    padding-bottom: 10px;
-  }
+  /*.feature-list {*/
+  /*  display: flex;*/
+  /*  gap: 20px;*/
+  /*  flex-wrap: nowrap;*/
+  /*  overflow-x: auto; !* чтобы при нехватке места можно было скроллить *!*/
+  /*  padding-bottom: 10px;*/
+  /*}*/
 
   .feature {
     flex: 1 0 220px; /* фиксированная минимальная ширина, чтобы все были видны в ряд */
@@ -229,6 +230,12 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .feature:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(216, 140, 162, 0.3);
   }
 
   /* Опционально, чтобы заголовки были чуть выше */
@@ -246,4 +253,64 @@
       flex: 1 0 100%;
       max-width: 100%;
     }
+  }
+
+
+
+  .contact-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .contact-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+  }
+
+  .contact-icons img:hover {
+    transform: scale(1.1);
+  }
+
+  .contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .contact-details img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-phone h3 {
+    margin: 0;
+    color: #d88ca2;
+  }
+
+  .contact-phone p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+
+  .header__round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color, #d88ca2);
+    border-radius: 8px;
+    padding: 5px;
+    transition: 0.4s ease all;
+    line-height: 1.0;
+  }
+
+  .header__round:hover {
+    background-color: var(--secondary-color, #b66b84);
   }

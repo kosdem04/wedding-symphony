@@ -2,7 +2,8 @@ import { useState } from 'react'
 import cake1 from './assets/cake1.jpg'
 import cake2 from './assets/cake2.jpg'
 import cake3 from './assets/cake3.jpg'
-import cake5 from './assets/cake5.jpg'
+import telegramIcon from './assets/telegram.svg'
+import whatsappIcon from './assets/whatsapp.svg'
 import chef from './assets/chef.jpg' // Фото кондитера
 import './App.css'
 
@@ -14,9 +15,19 @@ function App() {
             <header className="hero" id="hero">
                 <div className="hero-content">
                     <h1>Сладкая Свадебная Симфония</h1>
-                    <p>Выбирая наши торты, вы выбираете красивое,
-                        яркое начало вашей семейной истории, запечатленное на снимках.</p>
-                    <a href="#contact" className="btn">Оставить заявку</a>
+                    <p>Добро пожаловать в мой мир изысканных тортов, в мир Сладкой Свадебной симфонии!</p>
+                    <div style={{display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '20px'}}>
+                      <span className="header__round">
+                        <a href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">
+                          <img  src={telegramIcon} alt="Telegram" style={{width: '64px', height: '64px'}}/>
+                        </a>
+                        </span>
+                        <span className="header__round">
+                        <a href="https://wa.me/79001234567" target="_blank" rel="noopener noreferrer">
+                          <img  src={whatsappIcon} alt="WhatsApp" style={{width: '64px', height: '64px'}}/>
+                        </a>
+                      </span>
+                    </div>
                 </div>
             </header>
 
@@ -30,8 +41,8 @@ function App() {
                                 подчеркнут особенность события и оставят приятные воспоминания на долгие годы.</p>
                         </div>
                         <div className="feature">
-                            <h3>Размер имеет значение</h3>
-                            <p>Наш торт на 3 кг — это 60 см в высоту! Это не просто десерт — это центральный элемент
+                            <h3>🤩 Торт на 3 кг — это 60 см в высоту!</h3>
+                            <p>Это не просто десерт — это центральный элемент
                                 свадьбы,
                                 который украсит кадры, произведёт впечатление на гостей и подчеркнёт масштаб
                                 события.</p>
@@ -84,9 +95,8 @@ function App() {
             <section className="about" id="about">
                 <div className="container about-chef">
                     <div className="about-text">
-                        <h2>Обо мне</h2>
-                        <p>Добро пожаловать в мой мир изысканных тортов, в мир Сладкой Свадебной симфонии!
-                            Меня зовут Юлия. Более пяти лет я специализируюсь на создании классических
+                        <h2>Наш идейный вдохновитель</h2>
+                        <p>Меня зовут Юлия. Более пяти лет я специализируюсь на создании классических
                             белых высоких свадебных тортов, которые станут настоящим украшением вашего
                             торжества. Каждый торт — это не просто десерт, а настоящее произведение
                             искусства, которое придаст вашему свадебному дню особую магию.</p>
@@ -98,21 +108,31 @@ function App() {
             </section>
 
             <section className="contact" id="contact">
-                <div className="container">
-                    <h2>Оставьте заявку</h2>
-                    <form action="#" method="post" className="contact-form">
-                        <input type="text" name="name" placeholder="Ваше имя" required/>
-                        <input type="tel" name="phone" placeholder="Телефон" required/>
-                        <input type="email" name="email" placeholder="Email" required/>
-                        <textarea name="message" placeholder="Кратко опишите ваш торт мечты" rows="4"></textarea>
-                        <button type="submit" className="btn">Отправить заявку</button>
-                    </form>
+                <div className="container" style={{textAlign: 'center'}}>
+                    <h2>Свяжитесь с нами</h2>
+                    <p style={{marginBottom: '20px'}}>Мы с радостью ответим на все ваши вопросы!</p>
+                    <div style={{display: 'flex', justifyContent: 'center', gap: '15px'}}>
+                    <span className="header__round">
+                        <a href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">
+                          <img src={telegramIcon} alt="Telegram" style={{width: '80px', height: '80px'}}/>
+                        </a>
+                    </span>
+                        <span className="header__round">
+                        <a href="https://wa.me/79001234567" target="_blank" rel="noopener noreferrer">
+                          <img src={whatsappIcon} alt="WhatsApp" style={{width: '80px', height: '80px'}}/>
+                        </a>
+                    </span>
+                        <span className="contact-phone">
+                            <h3>+7 (495) 789-04-98</h3>
+                        <p>с 09.00 до 20.00</p>
+                      </span>
+                    </div>
                 </div>
             </section>
 
             <footer>
                 <div className="container">
-                    <p>&copy; 2025 Свадебные торты от Юлии. Все права защищены.</p>
+                    <p>&copy; 2025 Сладкая Свадебная Симфония. Все права защищены.</p>
                 </div>
             </footer>
         </>
