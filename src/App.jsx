@@ -2,22 +2,17 @@ import { useState } from 'react'
 import cake1 from './assets/cake1.jpg'
 import cake2 from './assets/cake2.jpg'
 import cake3 from './assets/cake3.jpg'
+import filling1 from './assets/filling1.jpg'
+import filling2 from './assets/filling2.jpg'
+import filling3 from './assets/filling3.jpg'
 import telegramIcon from './assets/telegram.svg'
 import whatsappIcon from './assets/whatsapp.svg'
 import chef from './assets/chef.jpg' // Фото кондитера
 import './App.css'
 import CakeCard from "./components/CakeCard.jsx";
+import FillingCard from "./components/FillingCard.jsx";
 
 function App() {
-    const [expanded, setExpanded] = useState([]);
-
-    const toggle = (index) => {
-        setExpanded((prev) => {
-            const newExpanded = [...prev];
-            newExpanded[index] = !newExpanded[index];
-            return newExpanded;
-        });
-    };
 
     const cakes = [
         {
@@ -49,6 +44,45 @@ function App() {
             desc: "Шикарный трёхъярусный торт для 15 – 20 гостей высотой 60 см классического " +
                 "дизайна — идеальное решение, которое станет не только сладким акцентом " +
                 "вашего праздника, но и великолепным фоном для ваших свадебных фотографий.",
+        },
+    ];
+
+    const fillings = [
+        {
+            image: filling1,
+            title: "Ягодная Мелодия Любви",
+            desc: "Погрузитесь в мир романтики и нежности с нашей эксклюзивной начинкой" +
+                " \"Ягодная Мелодия Любви\". Этот изысканный торт станет идеальным " +
+                "украшением вашего свадебного стола и подарит незабываемые моменты радости.",
+            composition: [
+                "Ванильный бисквит",
+                "Сливочный мусс",
+                "Ягодное пюре на выбор (клубника, смородина, облепиха)"
+            ]
+        },
+        {
+            image: filling2,
+            title: "Шоколадная Симфония с Вишневыми Аккордами",
+            desc: "Откройте для себя волшебство сладкого наслаждения с нашей начинкой " +
+                "\"Шоколадная Симфония с Вишневыми Аккордами\". Эта начинка — идеальный выбор " +
+                "для тех, кто хочет добавить в свой свадебный день нотку страсти и изысканности.",
+            composition: [
+                "Шоколадный бисквит",
+                "Крем чиз",
+                "Натуральная вишня"
+            ]
+        },
+        {
+            image: filling3,
+            title: "Персиковый Вальс Счастья",
+            desc: "Погрузитесь в атмосферу нежности и счастья с нашей начинкой " +
+                "\"Персиковый Вальс Счастья\". Эта начинка станет идеальным акцентом вашего " +
+                "свадебного торжества, наполняя его светом, радостью и изысканным вкусом.",
+            composition: [
+                "Ванильный бисквит",
+                "Крем чиз",
+                "Кусочки персика"
+            ]
         },
     ];
 
@@ -104,16 +138,37 @@ function App() {
             </section>
 
 
-            <section className="gallery" id="gallery">
+            <section className="gallery-section" id="gallery">
                 <div className="container">
-                    <h2>Выбери свой торт</h2>
-                    <div className="gallery-grid">
-                        {cakes.map((cake, index) => (
-                            <CakeCard
-                                key={index}
-                                {...cake}
-                            />
-                        ))}
+                    <h2 className="section-title">Выбери свой идеальный торт</h2>
+                    <div className="gallery-blocks">
+
+                        {/* Блок с тортами */}
+                        <div className="gallery-subblock">
+                            <h3>Выбери торт</h3>
+                            <div className="gallery-grid">
+                                {cakes.map((cake, index) => (
+                                    <CakeCard
+                                        key={index}
+                                        {...cake}
+                                    />
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Блок с начинками */}
+                        <div className="gallery-subblock">
+                            <h3>Выбери начинку</h3>
+                            <div className="gallery-grid">
+                                {fillings.map((cake, index) => (
+                                    <FillingCard
+                                        key={index}
+                                        {...cake}
+                                    />
+                                ))}
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>

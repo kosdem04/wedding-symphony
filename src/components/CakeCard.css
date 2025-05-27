@@ -56,21 +56,6 @@
     margin-bottom: 15px;
 }
 
-.card__btn {
-    padding: 10px 20px;
-    border: none;
-    background-color: #d88ca2;
-    color: #fff;
-    border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.card__btn:hover {
-    background-color: #b66b84;
-}
-
 
 .swiper {
    margin-bottom: 10px;

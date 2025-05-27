@@ -1,0 +1,70 @@
+
+.product__card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.product__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(216, 140, 162, 0.2);
+}
+
+
+.contentFilling .title {
+    font-size: 1.2rem;
+    color: #b66b84;
+    margin-bottom: 8px;
+}
+
+.contentFilling .amount {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #d88ca2;
+    margin-bottom: 15px;
+}
+
+.contentFilling .count {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #d88ca2;
+    margin-bottom: 15px;
+}
+
+.composition {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.composition-title {
+    display: block;
+    font-weight: bold;
+    color: #d88ca2;
+    margin-bottom: 4px;
+}
+
+.composition-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.85rem;
+    color: #d88ca2;
+    line-height: 1.4;
+}
+
+.composition-list li::before {
+    content: '•';
+    color: #d88ca2;
+    margin-right: 6px;
+}
+
+
+.descFilling {
+    text-align: center;
+}
