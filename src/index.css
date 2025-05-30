@@ -20,7 +20,10 @@
 
   .hero {
     background: linear-gradient(to bottom right, #ffeef1, #fff);
-    padding: 100px 20px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+    padding-left: 20px;
     text-align: center;
   }
 
@@ -354,4 +357,29 @@
     font-size: 0.9rem;
     color: #777;
     margin-top: 10px;
+  }
+
+
+  .hero-banner {
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+
+  .hero-banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .contact-button-wrapper {
+    margin-top: 20px;
+  }
+
+  .contact-link {
+    font-size: 1.1rem;
+    padding: 14px 30px;
   }

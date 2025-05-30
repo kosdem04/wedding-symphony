@@ -7,6 +7,7 @@ import filling2 from './assets/filling2.jpg'
 import filling3 from './assets/filling3.jpg'
 import telegramIcon from './assets/telegram.svg'
 import whatsappIcon from './assets/whatsapp.svg'
+import banner from './assets/banner.png'
 import chef from './assets/chef.jpg' // Фото кондитера
 import './App.css'
 import CakeCard from "./components/CakeCard.jsx";
@@ -91,18 +92,19 @@ function App() {
             <header className="hero" id="hero">
                 <div className="hero-content">
                     <h1>Сладкая Свадебная Симфония</h1>
-                    <p>Добро пожаловать в мой мир изысканных тортов, в мир Сладкой Свадебной симфонии!</p>
-                    <div style={{display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '20px'}}>
-                      <span className="header__round">
-                        <a href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">
-                          <img src={telegramIcon} alt="Telegram" style={{width: '64px', height: '64px'}}/>
+                    <div className="hero-banner">
+                        <img src={banner} alt="Banner" className="hero-banner-img"/>
+                    </div>
+
+                    {/*<p>Добро пожаловать в мой мир изысканных тортов, в мир*/}
+                    {/*    Сладкой Свадебной симфонии!</p>*/}
+                    <div className="contact-button-wrapper">
+                        <a
+                            href="#contact"
+                            className="btn contact-link"
+                        >
+                            Связаться с нами
                         </a>
-                        </span>
-                        <span className="header__round">
-                        <a href="https://wa.me/79001234567" target="_blank" rel="noopener noreferrer">
-                          <img src={whatsappIcon} alt="WhatsApp" style={{width: '64px', height: '64px'}}/>
-                        </a>
-                      </span>
                     </div>
                 </div>
             </header>
