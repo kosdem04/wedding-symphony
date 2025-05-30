@@ -20,17 +20,17 @@
 
   .hero {
     background: linear-gradient(to bottom right, #ffeef1, #fff);
-    padding-top: 30px;
-    padding-right: 20px;
-    padding-bottom: 100px;
-    padding-left: 20px;
+    padding: 30px 20px;
     text-align: center;
   }
 
   .hero-content h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     color: #d88ca2;
+    font-family: 'Dancing Script', cursive; /* романтичный рукописный шрифт */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
   }
 
   .hero-content p {
@@ -147,8 +147,9 @@
   }
 
   .features {
-    background-color: #fff4f6;
-    padding: 60px 0;
+    /*background-color: #fff4f6;*/
+    background-color: #f8e6ec;
+    padding: 30px 0;
   }
 
   .features h2 {
@@ -319,11 +320,10 @@
   }
 
 
-
-
   .gallery-section {
-    background-color: #f8e6ec;
-    padding: 60px 0;
+    /*background-color: #f8e6ec;*/
+    background-color: #fff4f6;
+    padding: 30px 0;
   }
 
   .gallery-section .section-title {
