@@ -197,17 +197,17 @@ function App() {
                     <p style={{marginBottom: '20px'}}>Мы с радостью ответим на все ваши вопросы!</p>
                     <div style={{display: 'flex', justifyContent: 'center', gap: '15px'}}>
                     <span className="header__round">
-                        <a href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">
+                        <a href="https://t.me/79963820386" target="_blank" rel="noopener noreferrer">
                           <img src={telegramIcon} alt="Telegram" style={{width: '80px', height: '80px'}}/>
                         </a>
                     </span>
                         <span className="header__round">
-                        <a href="https://wa.me/79001234567" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.me/79963820386" target="_blank" rel="noopener noreferrer">
                           <img src={whatsappIcon} alt="WhatsApp" style={{width: '80px', height: '80px'}}/>
                         </a>
                     </span>
                         <span className="contact-phone">
-                            <h3>+7 (495) 789-04-98</h3>
+                            <h3>+7 (996) 382-03-86</h3>
                         <p>с 09.00 до 20.00</p>
                       </span>
                     </div>
