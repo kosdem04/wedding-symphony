@@ -8,6 +8,7 @@ import filling3 from './assets/filling3.jpg'
 import telegramIcon from './assets/telegram.svg'
 import whatsappIcon from './assets/whatsapp.svg'
 import banner from './assets/banner.png'
+import mobileBanner from './assets/mobile-banner.png'
 import chef from './assets/chef.jpg' // Фото кондитера
 import './App.css'
 import CakeCard from "./components/CakeCard.jsx";
@@ -93,7 +94,11 @@ function App() {
                 <div className="hero-content">
                     <h1>Сладкая Свадебная Симфония</h1>
                     <div className="hero-banner">
-                        <img src={banner} alt="Banner" className="hero-banner-img"/>
+                        <picture>
+                            <source srcSet={mobileBanner} media="(max-width: 768px)"/>
+                            <source srcSet={banner} media="(min-width: 769px)"/>
+                            <img src={banner} alt="Banner" className="hero-banner-img"/>
+                        </picture>
                     </div>
 
                     {/*<p>Добро пожаловать в мой мир изысканных тортов, в мир*/}
@@ -117,7 +122,7 @@ function App() {
 
                         {/* Блок с тортами */}
                         <div className="gallery-subblock">
-                            <h3>Выбери торт</h3>
+                            <h3>Выбери дизайн</h3>
                             <div className="gallery-grid">
                                 {cakes.map((cake, index) => (
                                     <CakeCard
@@ -179,7 +184,7 @@ function App() {
             <section className="about" id="about">
                 <div className="container about-chef">
                     <div className="about-text">
-                        <h2>Наш идейный вдохновитель</h2>
+                        {/*<h2>Наш идейный вдохновитель</h2>*/}
                         <p>Меня зовут Юлия. Более пяти лет я специализируюсь на создании классических
                             белых высоких свадебных тортов, которые станут настоящим украшением вашего
                             торжества. Каждый торт — это не просто десерт, а настоящее произведение
@@ -197,7 +202,7 @@ function App() {
                     <p style={{marginBottom: '20px'}}>Мы с радостью ответим на все ваши вопросы!</p>
                     <div style={{display: 'flex', justifyContent: 'center', gap: '15px'}}>
                     <span className="header__round">
-                        <a href="https://t.me/79963820386" target="_blank" rel="noopener noreferrer">
+                        <a href="https://t.me/SvadebnaySymphony" target="_blank" rel="noopener noreferrer">
                           <img src={telegramIcon} alt="Telegram" style={{width: '80px', height: '80px'}}/>
                         </a>
                     </span>
@@ -206,10 +211,10 @@ function App() {
                           <img src={whatsappIcon} alt="WhatsApp" style={{width: '80px', height: '80px'}}/>
                         </a>
                     </span>
-                        <span className="contact-phone">
-                            <h3>+7 (996) 382-03-86</h3>
-                        <p>с 09.00 до 20.00</p>
-                      </span>
+                        <address>
+                            <strong>+7 (996) 382-03-86</strong><br/>
+                            <span>с 09.00 до 20.00</span>
+                        </address>
                     </div>
                 </div>
             </section>
