@@ -33,6 +33,13 @@
     transition: all 0.3s ease-in-out;
   }
 
+  .hero-subtitle {
+    font-size: 1.3rem;
+    color: #b66b84;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
   .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 20px;
@@ -251,6 +258,17 @@
   @media (max-width: 767px) {
     .feature-list {
       grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: #b66b84;
+      margin-bottom: 20px;
     }
 
     .feature {

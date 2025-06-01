@@ -93,6 +93,7 @@ function App() {
             <header className="hero" id="hero">
                 <div className="hero-content">
                     <h1>Сладкая Свадебная Симфония</h1>
+                    <h3 className="hero-subtitle">Свадебные торты Новосибирск</h3>
                     <div className="hero-banner">
                         <picture>
                             <source srcSet={mobileBanner} media="(max-width: 768px)"/>
@@ -213,7 +214,8 @@ function App() {
                     </span>
                         <address>
                             <strong>+7 (996) 382-03-86</strong><br/>
-                            <span>с 09.00 до 20.00</span>
+                            <span>с 09.00 до 20.00</span><br/>
+                            <span>г. Новосибирск</span>
                         </address>
                     </div>
                 </div>
