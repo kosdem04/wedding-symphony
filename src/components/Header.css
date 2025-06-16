@@ -67,14 +67,28 @@
     text-align: right;
 }
 
+.site-logo {
+    max-height: 100px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
 /* 🔽 Мобильная адаптация */
 @media (max-width: 768px) {
+    .site-logo {
+        max-height: 70px;
+    }
+
     .custom-header {
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: space-between;
-        padding: 20px 20px; /* ⬅️ увеличено с 10px */
+        padding-top: 15px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+        padding-left: 20px;
         min-height: 80px;   /* ⬅️ добавлено: явно задать высоту */
     }
 

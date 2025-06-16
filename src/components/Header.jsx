@@ -2,12 +2,14 @@ import React from 'react';
 import telegramIcon from '../assets/telegram.svg';
 import whatsappIcon from '../assets/whatsapp.svg';
 import './Header.css';
+import logo from '../assets/logo.png';
 
 const Header = () => {
     return (
         <div className="custom-header">
             <div className="header-left">
-                <h1 className="site-title">Сладкая Симфония</h1>
+                <img src={logo} alt="Сладкая Симфония" className="site-logo"/>
+                {/*<h1 className="site-title">Сладкая Симфония</h1>*/}
             </div>
             <div className="header-center">
                 <p className="header-usp">Многоярусные свадебные торты <br />
