@@ -1,0 +1,82 @@
+.testimonials {
+    padding: 20px 12px;
+    /*background: linear-gradient(135deg, #ffe6ec, #fff8fc);*/
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.4rem;
+    color: #752E4A;
+    margin-bottom: 16px;
+    font-family: 'Source Serif Pro', cursive;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Для мобильного swiper */
+.testimonials-swiper {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+/* Для десктопа - отзывы в ряд */
+.testimonials-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial-item {
+    flex: 1 1 30%;
+    max-width: 280px;
+}
+
+.testimonial-image {
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    max-width: 280px;
+}
+
+.testimonial-image:hover {
+    transform: scale(1.01);
+}
+
+/* Мобильные стили */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    .testimonials {
+        padding: 16px 10px;
+    }
+
+    .testimonials-swiper {
+        max-width: 100%;
+    }
+
+    .testimonial-image {
+        border-radius: 6px;
+        max-height: 550px;
+    }
+}
+
+
+/* Swiper для десктопа */
+.testimonials-swiper-desktop {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.testimonials-swiper-desktop .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+

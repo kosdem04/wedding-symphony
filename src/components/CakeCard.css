@@ -25,8 +25,8 @@
 }
 
 .card-label {
-    background-color: #d88ca2;
-    color: #fff;
+    background-color: #F6EEE6;
+    color: #846963;
     font-size: 0.75rem;
     padding: 4px 10px;
     border-radius: 20px;
@@ -38,25 +38,50 @@
 }
 
 .content .title {
-    font-size: 1.2rem;
-    color: #b66b84;
+    font-size: 1.5rem;
+    color: #742E4A;
     margin-bottom: 8px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
 .content .amount {
-    font-size: 0.95rem;
-    color: #777;
+    font-size: 1.3rem;
+    color: #742E4A;
     margin-bottom: 8px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
 }
 
-.content .count {
+/*.content .count {*/
+/*    font-size: 1.1rem;*/
+/*    font-weight: bold;*/
+/*    color: #d88ca2;*/
+/*    margin-bottom: 15px;*/
+/*}*/
+
+.composition-cake-list {
+    list-style: none;
+    padding-left: 0;
     font-size: 1.1rem;
-    font-weight: bold;
-    color: #d88ca2;
-    margin-bottom: 15px;
+    color: #742E4A;
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Playfair Display', serif;
 }
 
+.composition-cake-list li::before {
+    content: '•';
+    color: #742E4A;
+    margin-right: 6px;
+}
 
-.swiper {
+.swiper-card {
    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.contact-button-wrapper-card {
+    margin-top: 30px;
+    margin-bottom: 10px;
 }

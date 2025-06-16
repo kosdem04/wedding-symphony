@@ -14,7 +14,15 @@ export default function FillingCard({ image, title, composition, desc, }) {
                         ))}
                     </ul>
                 </div>
-                <p className="descFilling">{desc}</p>
+                {/*<p className="descFilling">{desc}</p>*/}
+            </div>
+            <div className="contact-button-wrapper-card">
+                <a
+                    href="#contact"
+                    className="btn contact-link"
+                >
+                    Задать вопрос
+                </a>
             </div>
         </div>
     );
