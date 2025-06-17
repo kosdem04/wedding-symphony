@@ -275,9 +275,9 @@ function App() {
                     </p>
                     <div className="footer-main">
                         <p>&copy; 2025 Сладкая Свадебная Симфония. Все права защищены.</p>
-                        <a href="https://webmaster.yandex.ru/siteinfo/?site=https://wedding-symphony.ru">
-                            <img width="88" height="31" alt="" border="0"
-                                 src="https://yandex.ru/cycounter?https://wedding-symphony.ru&theme=light&lang=ru"/>
+                        <a href="https://webmaster.yandex.ru/siteinfo/?site=https://sweet-symphony54.ru">
+                            <img width="88" height="31" alt="" border="0" border-radius="8"
+                                 src="https://yandex.ru/cycounter?https://sweet-symphony54.ru&theme=light&lang=ru"/>
                         </a>
                     </div>
                 </div>
