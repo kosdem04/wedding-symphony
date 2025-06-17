@@ -4,5 +4,5 @@ services:
       context: .         # Путь к директории с Dockerfile
       dockerfile: Dockerfile
     ports:
-      - "80:80"
+      - "8082:80"
     restart: unless-stopped
