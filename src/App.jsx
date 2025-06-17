@@ -274,7 +274,7 @@ function App() {
                         *Бесплатная доставка по Центральному и Октябрьскому району.
                     </p>
                     <div className="footer-main">
-                        <p>&copy; 2025 Сладкая Свадебная Симфония. Все права защищены.</p>
+                        <p>&copy; 2025 Сладкая Симфония. Все права защищены.</p>
                         <a href="https://webmaster.yandex.ru/siteinfo/?site=https://sweet-symphony54.ru">
                             <img width="88" height="31" alt="" border="0" border-radius="8"
                                  src="https://yandex.ru/cycounter?https://sweet-symphony54.ru&theme=light&lang=ru"/>
