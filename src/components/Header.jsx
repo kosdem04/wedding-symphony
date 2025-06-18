@@ -9,7 +9,6 @@ const Header = () => {
         <div className="custom-header">
             <div className="header-left">
                 <img src={logo} alt="Сладкая Симфония" className="site-logo"/>
-                {/*<h1 className="site-title">Сладкая Симфония</h1>*/}
             </div>
             <div className="header-center">
                 <p className="header-usp">Многоярусные свадебные торты <br />
@@ -17,7 +16,7 @@ const Header = () => {
             </div>
             <div className="header-right">
                 <span className="header__round">
-                <a href="https://t.me/SvadebnaySymphony" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/sweet_symphony54" target="_blank" rel="noopener noreferrer">
                     <img src={telegramIcon} alt="Telegram" className="header-icon"/>
                 </a>
                 </span>

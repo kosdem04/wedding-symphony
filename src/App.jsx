@@ -250,7 +250,7 @@ function App() {
                     <p style={{marginBottom: '20px'}}>Мы с радостью ответим на все ваши вопросы!</p>
                     <div style={{display: 'flex', justifyContent: 'center', gap: '15px'}}>
                     <span className="header__round">
-                        <a href="https://t.me/SvadebnaySymphony" target="_blank" rel="noopener noreferrer">
+                        <a href="https://t.me/sweet_symphony54" target="_blank" rel="noopener noreferrer">
                           <img src={telegramIcon} alt="Telegram" style={{width: '80px', height: '80px'}}/>
                         </a>
                     </span>
