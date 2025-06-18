@@ -273,6 +273,9 @@ function App() {
                     <p className="footer-note">
                         *Бесплатная доставка по Центральному и Октябрьскому району.
                     </p>
+                    <p className="footer-note">
+                        *Скидки не суммируются.
+                    </p>
                     <div className="footer-main">
                         <p>&copy; 2025 Сладкая Симфония. Все права защищены.</p>
                         <a href="https://webmaster.yandex.ru/siteinfo/?site=https://sweet-symphony54.ru">
