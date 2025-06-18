@@ -124,7 +124,7 @@ function App() {
                     {/*    Сладкой Свадебной симфонии!</p>*/}
                     <div className="contact-button-wrapper">
                         <a
-                            href="#contact"
+                            href="#gallery"
                             className="btn contact-link"
                         >
                             Хочу торт
