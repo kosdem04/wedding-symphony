@@ -12,6 +12,13 @@
     text-align: center;
 }
 
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
 .product__card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 24px rgba(216, 140, 162, 0.2);
@@ -53,12 +60,14 @@
     font-family: 'Playfair Display', serif;
 }
 
-/*.content .count {*/
-/*    font-size: 1.1rem;*/
-/*    font-weight: bold;*/
-/*    color: #d88ca2;*/
-/*    margin-bottom: 15px;*/
-/*}*/
+.content .count {
+    font-size: 1.8rem;
+    color: #742E4A;
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
 
 .composition-cake-list {
     list-style: none;

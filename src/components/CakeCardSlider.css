@@ -1,0 +1,15 @@
+.cake-slider-section {
+    padding: 30px 0;
+}
+
+.cake-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .cake-grid {
+        display: block;
+    }
+}

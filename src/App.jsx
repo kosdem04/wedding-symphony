@@ -2,6 +2,9 @@ import { useState } from 'react'
 import cake1 from './assets/cake1.jpg'
 import cake2 from './assets/cake2.jpg'
 import cake3 from './assets/cake3.jpg'
+import cake4 from './assets/cake4.jpg'
+import cake5 from './assets/cake5.jpg'
+import cake6 from './assets/cake6.jpg'
 import filling1 from './assets/filling1.jpg'
 import filling2 from './assets/filling2.jpg'
 import filling3 from './assets/filling3.jpg'
@@ -11,20 +14,51 @@ import banner from './assets/banner.png'
 import mobileBanner from './assets/mobile-banner.png'
 import chef from './assets/chef.jpg' // Фото кондитера
 import './App.css'
-import CakeCard from "./components/CakeCard.jsx";
+import CakeCardSlider from './components/CakeCardSlider';
 import FillingCard from "./components/FillingCard.jsx";
 import Header from "./components/Header.jsx";
 import TestimonialsSlider from "./components/TestimonialsSlider.jsx";
+import FillingCardSlider from "./components/FillingCardSlider.jsx";
 
 function App() {
 
     const cakes = [
         {
+            label: "Почти даром",
+            image: cake6,
+            title: "Воздушная элегия",
+            size: "4 яруса 60 см 3 кг",
+            price: "9 999 ₽",
+            desc: [
+                "На 25-30 гостей - \n" +
+                "16 599 ₽",
+                "На 35-40 гостей-\n" +
+                "21 699 ₽",
+                "На 45-50 гостей-\n" +
+                "28 700 ₽"
+            ],
+        },
+        {
+            label: "Классика",
+            image: cake5,
+            title: "Облако любви",
+            size: "7 ярусов 90 см от 5 кг",
+            price: "от 17 899 ₽",
+            desc: [
+                "На 25-30 гостей - \n" +
+                "16 599 ₽",
+                "На 35-40 гостей-\n" +
+                "21 699 ₽",
+                "На 45-50 гостей-\n" +
+                "28 700 ₽"
+            ],
+        },
+        {
             label: "Новинка",
             image: cake2,
             title: "Белоснежная классика",
-            size: "7 ярусов 90 см",
-            price: "от 15 000 ₽",
+            size: "7 ярусов 90 см от 5 кг",
+            price: "от 17 899 ₽",
             desc: [
                 "На 25-30 гостей - \n" +
                 "17 899 ₽",
@@ -36,10 +70,10 @@ function App() {
         },
         {
             label: "Классика",
-            image: cake3,
-            title: "Торжество нежности",
-            size: "7 ярусов 90 см",
-            price: "от 13 500 ₽",
+            image: cake4,
+            title: "Белоснежная нежность",
+            size: "7 ярусов 90 см от 5 кг",
+            price: "от 17 899 ₽",
             desc: [
                 "На 25-30 гостей - \n" +
                 "16 599 ₽",
@@ -53,8 +87,8 @@ function App() {
             label: "Хит",
             image: cake1,
             title: "Симфония любви",
-            size: "3 яруса 60 см",
-            price: "от 10 500 ₽",
+            size: "3 яруса 60 см от 3 кг",
+            price: "от 12 699 ₽",
             desc: [
                 "На 15-20 гостей - \n" +
                 "12 699 ₽",
@@ -64,6 +98,22 @@ function App() {
                 "22 499 ₽"
             ],
         },
+        {
+            label: "Классика",
+            image: cake3,
+            title: "Торжество нежности",
+            size: "7 ярусов 90 см от 5 кг",
+            price: "от 17 899 ₽",
+            desc: [
+                "На 25-30 гостей - \n" +
+                "16 599 ₽",
+                "На 35-40 гостей-\n" +
+                "21 699 ₽",
+                "На 45-50 гостей-\n" +
+                "28 700 ₽"
+            ],
+        },
+
     ];
 
     const fillings = [
@@ -108,6 +158,10 @@ function App() {
     return (
         <>
             <Header/>
+            <div className="promo-banner2">
+                <p className="promo-text">🎉 <strong>Скидка 20%!</strong><br/> при бронировании до 30.06.2025</p>
+                <a href="#contact" className="btn promo-btn">Получить скидку</a>
+            </div>
             <header className="hero" id="hero">
                 <div className="hero-content">
                     {/*<h1>Сладкая Симфония</h1>*/}
@@ -142,33 +196,30 @@ function App() {
                         {/* Блок с тортами */}
                         <div className="gallery-subblock">
                             {/*<h3>Выбери дизайн</h3>*/}
-                            <div className="gallery-grid">
-                                {cakes.map((cake, index) => (
-                                    <CakeCard
-                                        key={index}
-                                        {...cake}
-                                    />
-                                ))}
-                            </div>
+                            <CakeCardSlider cakes={cakes}/>
                         </div>
 
                         {/* Промо-блок со скидкой */}
                         <div className="promo-banner">
-                            <p className="promo-text">🎉 Забронируй до 30.06.2025 —<br/> получи торт своей мечты со
-                                скидкой <strong>20%</strong>!</p>
-                            <a href="#contact" className="btn promo-btn">Хочу скидку</a>
+                            <p className="promo-text">🎉 <strong>Скидка 20%!</strong><br/> при бронировании до 30.06.2025
+                            </p>
+                            <a href="#contact" className="btn promo-btn">Получить скидку</a>
                         </div>
 
                         {/* Блок с начинками */}
                         <div className="gallery-subblock">
                             <h3>Начинки</h3>
+                            {/*<div className="gallery-grid">*/}
+                            {/*    {fillings.map((cake, index) => (*/}
+                            {/*        <FillingCard*/}
+                            {/*            key={index}*/}
+                            {/*            {...cake}*/}
+                            {/*        />*/}
+                            {/*    ))}*/}
+                            {/*</div>*/}
                             <div className="gallery-grid">
-                                {fillings.map((cake, index) => (
-                                    <FillingCard
-                                        key={index}
-                                        {...cake}
-                                    />
-                                ))}
+                                {/*<h3>Выбери дизайн</h3>*/}
+                                <FillingCardSlider fillings={fillings}/>
                             </div>
                         </div>
 
@@ -239,9 +290,8 @@ function App() {
 
             {/* Промо-блок со скидкой */}
             <div className="promo-banner">
-                <p className="promo-text">🎉 Забронируй до 30.06.2025 —<br/> получи торт своей мечты со
-                    скидкой <strong>20%</strong>!</p>
-                <a href="#contact" className="btn promo-btn">Хочу скидку</a>
+                <p className="promo-text">🎉 <strong>Скидка 20%!</strong><br/> при бронировании до 30.06.2025</p>
+                <a href="#contact" className="btn promo-btn">Получить скидку</a>
             </div>
 
             <section className="contact" id="contact">
