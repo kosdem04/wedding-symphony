@@ -24,10 +24,10 @@ function App() {
 
     const cakes = [
         {
-            label: "Почти даром",
+            label: "Хит",
             image: cake6,
             title: "Воздушная элегия",
-            size: "4 яруса 60 см 3 кг",
+            size: "6 ярусов 90 см от 5 кг",
             price: "от 2 500 ₽ кг",
             desc: [
                 "На 25-30 гостей - \n" +
