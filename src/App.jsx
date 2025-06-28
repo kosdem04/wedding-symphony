@@ -8,6 +8,9 @@ import cake6 from './assets/cake6.jpg'
 import filling1 from './assets/filling1.jpg'
 import filling2 from './assets/filling2.jpg'
 import filling3 from './assets/filling3.jpg'
+import filling4 from './assets/filling4.jpg'
+import filling5 from './assets/filling5.jpg'
+import filling6 from './assets/filling6.jpg'
 import telegramIcon from './assets/telegram.svg'
 import whatsappIcon from './assets/whatsapp.svg'
 import banner from './assets/banner.png'
@@ -151,6 +154,33 @@ function App() {
                 "Ванильный бисквит",
                 "Крем чиз",
                 "Кусочки персика"
+            ]
+        },
+        {
+            image: filling4,
+            title: "Малиновый бархат",
+            composition: [
+                "Шоколадный бисквит бордового цвета",
+                "Крем чиз",
+                "Малиновое конфи"
+            ]
+        },
+        {
+            image: filling5,
+            title: "Молочная девочка с фруктовой начинкой",
+            composition: [
+                "Бисквит на сгущенке",
+                "Сливочно-фруктовый крем",
+                "фруктовая начинка на выбор (персики, ананасы, киви)"
+            ]
+        },
+        {
+            image: filling6,
+            title: "Торт OREO",
+            composition: [
+                "Шоколадный бисквит",
+                "Крем чиз",
+                "Печенье ОРЕО"
             ]
         },
     ];
