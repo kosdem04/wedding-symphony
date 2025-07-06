@@ -12,7 +12,7 @@ const Header = () => {
             </div>
             <div className="header-center">
                 <p className="header-usp">Масштабные многоярусные торты <br />
-                    от 3х килограмм в Новосибирске</p>
+                    от 5 килограмм в Новосибирске</p>
             </div>
             <div className="header-right">
                 <span className="header__round">
