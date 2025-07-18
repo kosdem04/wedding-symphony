@@ -6,7 +6,7 @@ import logo from '../assets/logo.png';
 
 const Header = () => {
     return (
-        <div className="custom-header">
+        <header className="custom-header">
             <div className="header-left">
                 <img src={logo} alt="Сладкая Симфония" className="site-logo"/>
             </div>
@@ -31,7 +31,7 @@ const Header = () => {
                     <div>г. Новосибирск</div>
                 </div>
             </div>
-        </div>
+        </header>
 );
 };
 

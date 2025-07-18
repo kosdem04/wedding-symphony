@@ -11,6 +11,7 @@ import cake9 from './assets/cake9.jpg'
 import cake10 from './assets/cake10.jpg'
 import cake11 from './assets/cake11.jpg'
 import cake12 from './assets/cake12.jpg'
+import personal from './assets/personal.jpg'
 import filling1 from './assets/filling1.jpg'
 import filling2 from './assets/filling2.jpg'
 import filling3 from './assets/filling3.jpg'
@@ -32,6 +33,21 @@ import FillingCardSlider from "./components/FillingCardSlider.jsx";
 function App() {
 
     const cakes = [
+        {
+            label: "Индивидуальный дизайн",
+            image: personal,
+            title: "Ваш торт мечты",
+            size: "🤍 ярусов 🤍 см от 5 кг",
+            price: "от 2 500 ₽ кг",
+            desc: [
+                "На 15-20 гостей - \n" +
+                "12 699 ₽",
+                "На 25-30 гостей-\n" +
+                "17 899 ₽",
+                "На 35-40 гостей-\n" +
+                "22 499 ₽"
+            ],
+        },
         {
             label: "Хит",
             image: cake1,
@@ -288,7 +304,8 @@ function App() {
             {/*    <p className="promo-text">🎉 <strong>Скидка 20%!</strong><br/> при бронировании до 30.06.2025</p>*/}
             {/*    <a href="#contact" className="btn promo-btn">Получить скидку</a>*/}
             {/*</div>*/}
-            <header className="hero" id="hero">
+            <main>
+            <section className="hero" id="hero">
                 <div className="hero-content">
                     {/*<h1>Сладкая Симфония</h1>*/}
                     {/*<h3 className="hero-subtitle">Свадебные торты Новосибирск</h3>*/}
@@ -311,7 +328,7 @@ function App() {
                         </a>
                     </div>
                 </div>
-            </header>
+            </section>
 
 
             <section className="gallery-section" id="gallery">
@@ -451,6 +468,7 @@ function App() {
                     </div>
                 </div>
             </section>
+            </main>
 
             <footer>
                 <div className="footer-container">
