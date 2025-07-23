@@ -33,11 +33,14 @@
 }
 
 .header-usp {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.0rem;
-    color: #742E4A;
+    font-family: 'Cormorant', serif;
+    font-size: 2.5rem;
+    color: rgb(175, 166, 123);
     margin: 0;
     font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.0;
+    text-align: left;
 }
 
 .header-right {
@@ -92,8 +95,15 @@
         min-height: 80px;   /* ⬅️ добавлено: явно задать высоту */
     }
 
-    .header-center {
-        display: none;
+    .header-usp {
+        font-family: 'Cormorant', serif;
+        font-size: 1.5rem;
+        color: rgb(175, 166, 123);
+        margin: 0;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 1.0;
+        text-align: left;
     }
 
     .header-left {

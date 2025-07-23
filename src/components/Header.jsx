@@ -11,8 +11,7 @@ const Header = () => {
                 <img src={logo} alt="Сладкая Симфония" className="site-logo"/>
             </div>
             <div className="header-center">
-                <p className="header-usp">Масштабные многоярусные торты <br />
-                    от 5 килограмм в Новосибирске</p>
+                <p className="header-usp">Кондитерская<br/> премиум-класса</p>
             </div>
             <div className="header-right">
                 <span className="header__round">
