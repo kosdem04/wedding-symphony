@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://sweet-symphony54.ru/sitemap.xml
+Sitemap: https://cake-de-luxe.ru/sitemap.xml
