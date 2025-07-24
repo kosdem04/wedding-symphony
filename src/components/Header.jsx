@@ -8,14 +8,14 @@ const Header = () => {
     return (
         <header className="custom-header">
             <div className="header-left">
-                <img src={logo} alt="Сладкая Симфония" className="site-logo"/>
+                <img src={logo} alt="Cake de Luxe" className="site-logo"/>
             </div>
             <div className="header-center">
                 <p className="header-usp">Кондитерская<br/> премиум-класса</p>
             </div>
             <div className="header-right">
                 <span className="header__round">
-                <a href="https://t.me/sweet_symphony54" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/cake_de_luxe54" target="_blank" rel="noopener noreferrer">
                     <img src={telegramIcon} alt="Telegram" className="header-icon"/>
                 </a>
                 </span>

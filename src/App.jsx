@@ -181,7 +181,7 @@ function App() {
                         <p style={{marginBottom: '20px'}}>Мы с радостью ответим на все ваши вопросы!</p>
                         <div style={{display: 'flex', justifyContent: 'center', gap: '15px'}}>
                     <span className="header__round">
-                        <a href="https://t.me/sweet_symphony54" target="_blank" rel="noopener noreferrer">
+                        <a href="https://t.me/cake_de_luxe54" target="_blank" rel="noopener noreferrer">
                           <img src={telegramIcon} alt="Telegram" style={{width: '80px', height: '80px'}}/>
                         </a>
                     </span>
@@ -209,7 +209,7 @@ function App() {
                         *Скидки не суммируются.
                     </p>
                     <div className="footer-main">
-                        <p>&copy; 2025 Сладкая Симфония. Все права защищены.</p>
+                        <p>&copy; 2025 Cake de Luxe. Все права защищены.</p>
                         <a href="https://webmaster.yandex.ru/siteinfo/?site=https://sweet-symphony54.ru">
                             <img width="88" height="31" alt="" border="0" border-radius="8"
                                  src="https://yandex.ru/cycounter?https://sweet-symphony54.ru&theme=light&lang=ru"/>
