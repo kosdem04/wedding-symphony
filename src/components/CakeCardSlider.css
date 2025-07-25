@@ -2,6 +2,14 @@
     padding: 30px 0;
 }
 
+.swiper-button-prev, .swiper-button-next {
+    color: #4B4B4B;
+}
+
+.swiper-pagination-bullet-active {
+    background: #4B4B4B;
+}
+
 .cake-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
